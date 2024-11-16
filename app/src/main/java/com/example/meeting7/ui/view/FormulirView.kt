@@ -110,6 +110,18 @@ fun FormulirView(
             }
         )
 
+        TextField(
+            value = nim,
+            onValueChange = {nim = it},
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp),
+            label = { Text("Address") },
+            placeholder = {
+                Text("Input Your Address!", color = Color.Gray)
+            }
+        )
+
         Button(onClick = {
             onClickButton(listData)
         }, modifier = Modifier.padding(vertical = 10.dp)) {
